@@ -135,7 +135,7 @@ const displaySummary = function (account) {
 let currentAccount;
 
 btnLogin.addEventListener('click', function (e) {
-  // e.preventDefault;
+  e.preventDefault;
   console.log('login');
   currentAccount = accounts.find(
     acc => acc.username === inputLoginUsername.value
