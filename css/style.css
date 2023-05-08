@@ -435,7 +435,7 @@ footer {
   }
 }
 
-@media (min-width: 368px) and (max-width: 768px) {
+@media (max-width: 768px) {
   :root {
     --primary-padding: 4rem;
     --primary-marging: 4rem;
@@ -485,11 +485,5 @@ footer {
   .artwork {
     grid-template-columns: 1fr;
     row-gap: 1rem;
-  }
-
-  @media (max-width: 367px) {
-    html {
-      font-size: 25%;
-    }
   }
 }
