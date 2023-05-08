@@ -443,7 +443,7 @@ footer {
     --primary-marging-block: 8rem;
     --h2heading-setting: 4rem;
     --h2heading-font-size: 7rem;
-    --primary-font-size: 5rem;
+    --primary-font-size: 4rem;
   }
 
   html {
@@ -455,6 +455,10 @@ footer {
   }
   h2 {
     font-size: 3rem;
+  }
+  .card-title {
+    font-size: 3rem;
+    letter-spacing: 1.5px;
   }
 
   p {
