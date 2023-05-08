@@ -462,6 +462,10 @@ footer {
     line-height: 4rem;
     margin: 0;
   }
+  svg {
+    height: 80px;
+  }
+
   /* ----------------------- */
   .banner {
     grid-template-columns: 1fr;
