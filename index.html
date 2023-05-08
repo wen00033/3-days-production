@@ -36,13 +36,10 @@
       <header>
         <button  class="mobile-nav-toggle" aria-controls="header-options" ><span class="visually-hidden" >Menu</span></button>
       <div data-visibility="false" class="header-options" aria-expanded="false">
-        <div class="header-link">
-          <a class="header-link-youtube" href="#">youtube</a>
-          <a class="header-link-linkdeln" href="#">linkedin</a>
-        </div>
         <div class="header-logo">
           <img src="#" alt="images" />
         </div>
+      
         <nav class="header-nav">
           <ul >
             <li><a aria-hidden="true" href="index.html">Home</a></li>
@@ -50,6 +47,8 @@
             <li><a aria-hidden="true" href="work.html">work</a></li>
             <li><a aria-hidden="true" href="contact .html">contact</a></li>
             <li><a aria-hidden="true" href="lab.html">lab</a></li>
+           <li><a class="header-link-linkdeln" href="#">linkedin</a></li>
+           <li><a class="header-link-youtube" href="#">youtube</a></li> 
           </ul>
           
         </nav>
@@ -58,42 +57,49 @@
       
       <div class="banner">
         <div class="banner-text-content">
-          <div class="banner-heading-nonebox">
-            <h1 class="banner-heading-none">
-              Welcome to <br />
-              benjamin's website
-            </h1>
-            <svg
-            id="wrong-1"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xmlns:svgjs="http://svgjs.dev/svgjs"
-            viewBox="0 0 800 400"
-          >
-            <path
-              d="M37.45518493652344,260.2150573730469C54.03224690755208,227.50896390279135,117.3536376953125,64.4265251159668,136.9175567626953,63.97849655151367C156.48147583007812,63.53046798706055,132.28792572021484,257.0788567860921,154.8386993408203,257.5268859863281C177.38947296142578,257.97491518656415,256.83988189697266,67.26404317220052,272.2221984863281,66.66667175292969C287.6045150756836,66.06930033365886,232.7956797281901,251.7025146484375,247.13259887695312,253.94265747070312C261.4695180257161,256.18280029296875,340.7705942789714,80.10752868652344,358.24371337890625,80.10752868652344C375.7168324788411,80.10752868652344,337.7837371826172,253.49462890625,351.9713134765625,253.94265747070312C366.1588897705078,254.39068603515625,428.7335662841797,78.76344299316406,443.3691711425781,82.79570007324219C458.00477600097656,86.82795715332031,420.66905212402344,277.83751424153644,439.7849426269531,278.1361999511719C458.9008331298828,278.4348856608073,536.2604522705078,83.39307149251302,558.0645141601562,84.58781433105469C579.8685760498047,85.78255716959636,552.8375142415365,281.12305577596027,570.6093139648438,285.3046569824219C588.381113688151,289.4862581888835,644.5340270996094,109.97610727945964,664.6953125,109.67742156982422C684.8565979003906,109.3787358601888,677.6881306966146,284.1099141438802,691.5770263671875,283.5125427246094C705.4659220377604,282.91517130533856,738.6200764973959,135.66308466593424,748.0286865234375,106.09319305419922"
-              fill="none"
-              stroke-width="12"
-              stroke="rgb(233, 0, 255)"
-              stroke-linecap="round"
-            ></path>
-          </svg>
-          </div>
           <h1 class="banner-heading">
             Welcome to <br />
             benjamin's website
           </h1>
           <p class="heading-text">How's going today?</p>
         </div>
+        <div class='banner-photo-container'>
+          <img class="banner-photo" src="images/mypicture.jpg" alt="my-photo">
+          <!-- <svg
+          class="banner-photo-fluidframe"
+            id="visual"
+            viewBox="0 0 750 600"
+            width="800"
+            height="500"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+          >
+            <g transform="translate(500 250)">
+              <path
+                id="blob1"
+                d="M190.8 -50.7C227.5 51.1 224 177.2 160.7 223.9C97.4 270.5 -25.7 237.6 -84.7 179.8C-143.7 122 -138.7 39.3 -114 -46C-89.2 -131.3 -44.6 -219.2 16.2 -224.4C77 -229.7 154.1 -152.4 190.8 -50.7"
+              ></path>
+            </g>
+            <g transform="translate(500 250)">
+              <path
+                id="blob2"
+                d="M9.8 -26.5C19.6 11.3 39.3 22.7 39.3 97.7C39.3 172.7 19.6 311.3 -28.9 328C-77.4 344.7 -154.7 239.3 -199 138.8C-243.4 38.2 -254.6 -57.7 -215.9 -112.2C-177.2 -166.7 -88.6 -179.8 -44.3 -154.3C0 -128.7 0 -64.3 9.8 -26.5"
+              />
+            </g>
+            </svg> -->
+        </div>
         </div>
       </div>
       <div class="about-me-title title">
         <div class="about-me-text title-text">
           <h2>This is me!</h2>
-          <p>
-            This section just tell you why am I and how I love for being an graphy designer.
-          </p>
+          <span class="message">
+            <p>
+              Hi! I am a student in interactive media design in Algonquin college, I 'm interested in frontend development and website design.
+            </p>
+          </span>
+          
         </div>
         <svg
             id="visual"
@@ -119,28 +125,23 @@
             </svg>
       </div>
       <section class="about-me">
-        <div class="about-me-detail">
+        <div class="about-me-detail ">
           <img class="my-photo" src="images/mypicture.jpg" alt="images" />
         </div>
-        <div>
-          <h3>What is my expereinece</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            minima dolorum amet sint assumenda molestias ipsa nihil temporibus
-            quos eius itaque, soluta dignissimos incidunt fugiat. Consequuntur
-            at error nam libero!
-          </p>
+        <div class="section-content">
+            <p>
+              Welcome to my websites, I'm a new graduated student from algonquin college.
+            </p>
         </div>
       </section>
       <div class="skills-title title">
         <div class="skills-title-text title-text">
-          <h2>This is me!</h2>
+          <h2>Here are some of my work</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, ade. Dolore, aliquid saut
             distinctio ipsam.
           </p>
         </div>
-        <img src="#" alt="images" />
       </div>
       <section class="skills">
         <div class="skills-detail">
@@ -151,9 +152,9 @@
           </p>
         </div>
         <div class="skills-detail-images">
-          <img src="#" alt="images" />
-          <img src="#" alt="images" />
-          <img src="#" alt="images" />
+          <img src="images/10.jpeg" alt="images" />
+          <img src="images/13.webp" alt="images" />
+          <img src="images/15.webp" alt="images" />
         </div>
       </section>
       <div class="skills-title title">
@@ -164,59 +165,63 @@
             distinctio ipsam.
           </p>
         </div>
-        <img src="#" alt="images">
+   
       </div>
       <section class="artwork">
         <div class="card">
           <img src="#" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Web development</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          
           </div>
         </div>
         <div class="card">
           <img src="#" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">User Experience </h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          
           </div>
         </div>
         <div class="card">
           <img src="#" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Video Production</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          
           </div>
         </div>
         <div class="card">
           <img src="#" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Graphic Design</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        
           </div>
         </div>
       </section>
     
       <footer>
-        <div class="logo">images</div>
-        <h3>This is 3days production website</h3>
-        <p>This the @copyright</p>
+        <div class="logo">
+          <img src="#" alt="logo">
+        </div>
+        <div>
+          <h3>This is my porfolio</h3>
+        <p>Benjamin@copyright</p>
+        </div>
       </footer>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
