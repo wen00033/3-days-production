@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 1px solid yellowgreen;
+}
+
+html {
+  font-size: 62.5%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 10rem;
+}
+
+body {
+  background-color: $color-third;
+  font-family: "Nunito Sans", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.logo {
+  width: 1rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: $color-first;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: $color-first;
+}
+h2 {
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+i {
+  font-size: 4.5rem;
+  color: $color-third;
+}
+
+// body {
+//   overflow-x: hidden;
+// }

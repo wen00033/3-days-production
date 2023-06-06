@@ -1,30 +1,18 @@
-const tween = KUTE.fromTo(
-  "#blob1",
-  { path: "#blob1" },
-  { path: "#blob2" },
-  { repeat: 9999, duration: 3000, yoyo: true }
-);
-tween.start();
-
-// const tween1 = KUTE.fromTo(
-//   "#blob1-1",
-//   { path: "#blob1-1" },
-//   { path: "#blob1-2" },
-//   { repeat: 9999, duration: 1000, yoyo: true }
-// );
-// tween1.start();
-
-// -------------------------------------------
-const naviagtionBar = document.querySelector(".header-options");
-const naviagtionToggle = document.querySelector(".mobile-nav-toggle");
+const naviagtionBar = document.querySelector(".header-nav");
+const naviagtionToggle = document.querySelector(".toggle");
 
 naviagtionToggle.addEventListener("click", function () {
-  const visibility = naviagtionBar.getAttribute("data-visibility");
-  if (visibility === "false") {
-    naviagtionBar.setAttribute("data-visibility", true);
-    naviagtionToggle.setAttribute("aria-expanded", true);
+  const visibility = naviagtionToggle.getAttribute("data-toggle");
+  console.log(visibility);
+  if (visibility == "false") {
+    naviagtionBar.setAttribute("data-expend", true);
+    naviagtionBar.setAttribute("aria-expend", true);
+    naviagtionToggle.setAttribute("data-toggle", true);
+    naviagtionToggle.setAttribute("aria-toggle", true);
   } else {
-    naviagtionBar.setAttribute("data-visibility", false);
-    naviagtionToggle.setAttribute("aria-expanded", false);
+    naviagtionBar.setAttribute("data-expend", false);
+    naviagtionBar.setAttribute("aria-expend", false);
+    naviagtionToggle.setAttribute("data-toggle", false);
+    naviagtionToggle.setAttribute("aria-toggle", false);
   }
 });

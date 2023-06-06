@@ -1,0 +1,36 @@
+$color-choose-1: $color-third;
+$color-choose-2: $color-second;
+@mixin heading {
+  background-color: $color-choose-1;
+  position: relative;
+  isolation: isolate;
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    // transform: skewX(-10deg);
+    display: inline;
+    inset: 0;
+    width: 100%;
+    position: absolute;
+    background-color: $color-choose-2;
+  }
+}
+
+@mixin btn {
+  margin-block-end: 1rem;
+  padding: 0.5rem;
+  color: $color-third;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 2px;
+  background: $color-fourth;
+  transition: all 100ms ease-in-out;
+  box-shadow: 1px 1px 5px black;
+  &:hover {
+    box-shadow: 1px 2px 3px black;
+  }
+  &:active {
+    box-shadow: 1px 1px 2px black;
+  }
+}
