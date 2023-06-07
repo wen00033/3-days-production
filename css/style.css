@@ -66,7 +66,7 @@ h5 {
 p {
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.8rem;
+  line-height: 2rem;
 }
 
 i {
@@ -252,8 +252,8 @@ h1 span::after {
 }
 
 .banner {
-  padding-top: 1.5rem;
-  padding-inline: 1.5rem;
+  padding-top: 2rem;
+  padding-inline: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -337,7 +337,7 @@ main > *:not(:nth-last-child(1)) {
   hyphens: auto;
 }
 .about-me-wrapper p {
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 10px;
   margin: 0;
 }

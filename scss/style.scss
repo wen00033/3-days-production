@@ -10,7 +10,7 @@ header {
   background: $color-fourth;
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: $object-space;
   .logo {
     width: 15rem;
     object-fit: cover;
@@ -43,12 +43,12 @@ nav {
     background-color: $color-fourth;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: $object-space;
     li a {
       font-family: $primary-font;
       font-weight: 900;
       color: $color-third;
-      font-size: 2.5rem;
+      font-size: $large-text;
       display: block;
       text-decoration: none;
       text-align: left;
@@ -86,8 +86,8 @@ h1 {
 // ------------------------------------
 
 .banner {
-  padding-top: 1.5rem;
-  padding-inline: 1.5rem;
+  padding-top: $object-space;
+  padding-inline: $object-space;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -130,7 +130,7 @@ main > *:not(:nth-last-child(1)) {
 }
 
 .skills-slide {
-  padding-block: 2rem;
+  padding-block: $object-space;
   background-color: $color-fourth;
   align-items: center;
   // height: 8rem;
@@ -157,7 +157,7 @@ main > *:not(:nth-last-child(1)) {
   hyphens: auto;
   // text-align: center;
   p {
-    padding: 1rem;
+    padding: $object-space;
     border-radius: 10px;
     margin: 0;
   }
@@ -184,7 +184,7 @@ main > *:not(:nth-last-child(1)) {
 }
 
 footer {
-  padding: 2rem;
+  padding: $object-space;
   display: flex;
   justify-content: space-between;
   align-items: center;

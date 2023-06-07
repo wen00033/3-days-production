@@ -43,34 +43,34 @@ p {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: $large-text;
   font-weight: 900;
   color: $color-first;
 }
 h2 {
-  font-size: 2.3rem;
-  padding: 2rem;
+  font-size: $middle-text;
+  padding: $object-space;
   text-align: center;
   font-weight: 800;
 }
 h3 {
-  font-size: 1.8rem;
+  font-size: $small-text;
   font-weight: 500;
 }
 
 h5 {
-  font-size: 1.8rem;
+  font-size: $small-text;
   color: $color-second;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  padding: 2rem;
+  padding: $object-space;
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: $text;
   font-weight: 400;
-  line-height: 1.8rem;
+  line-height: 2rem;
 }
 
 i {
@@ -94,7 +94,7 @@ footer {
   width: 4rem;
 }
 .artwork {
-  padding-bottom: 2rem;
+  padding-bottom: $object-space;
 }
 
 .artwork__tab--1 {
