@@ -52,6 +52,15 @@ h3 {
   font-size: 1.8rem;
   font-weight: 500;
 }
+
+h5 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  padding: 1rem;
+}
+
 p {
   font-size: 1.6rem;
   font-weight: 400;
@@ -63,6 +72,72 @@ i {
   color: $color-third;
 }
 
+footer {
+  background-color: $color-fourth;
+}
+
+.btn {
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.artwork__tab--1 {
+  background-color: $color-second;
+}
+.artwork__tab--2 {
+  background-color: $color-fifth;
+}
+.artwork__tab--3 {
+  background-color: $color-sixth;
+}
+
+.artwork {
+  background-color: $color-fourth;
+  color: $color-third;
+}
+.fa-github {
+  cursor: pointer;
+  &:hover {
+    color: $color-first;
+  }
+}
+
+.artwork-tab-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.artwork__content--active {
+  display: grid !important;
+
+  // grid-template-rows: 1fr 1fr;
+  // row-gap: 1rem;
+}
+.artwork__content {
+  display: none;
+}
+.artwork__content--detail {
+  display: grid;
+  row-gap: 1rem;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  i {
+    font-size: 3.5rem;
+  }
+  p {
+    padding-inline: 2rem;
+  }
+}
+.artwork-tool {
+  display: flex;
+  justify-content: space-evenly;
+}
+// .artwork__content {
+//   display: none;
+// }
 // body {
 //   overflow-x: hidden;
 // }

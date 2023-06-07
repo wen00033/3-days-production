@@ -27,6 +27,7 @@ header {
 
 nav {
   transition: all 400ms ease-in-out;
+  overflow-x: hidden;
   z-index: 100;
   padding-block: clamp(7rem, 15rem, 50vh);
   position: absolute;
@@ -70,12 +71,12 @@ nav[data-expend="false"] {
 // ----------------------------
 h1 {
   @include heading;
-}
-$color-choose-1: $color-third;
-span {
-  @include heading;
-  color: $color-second;
-  // background-color: $color-first;
+  $color-choose-1: $color-third;
+  span {
+    @include heading;
+    color: $color-second;
+    // background-color: $color-first;
+  }
 }
 
 // ------------------------------------
@@ -176,4 +177,14 @@ main > *:not(:nth-last-child(1)) {
   background-color: $color-fifth;
   order: 4;
   align-self: start;
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    color: white;
+  }
 }

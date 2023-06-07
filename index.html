@@ -25,15 +25,13 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="images/Artboard 1.svg" alt="images" />
-      <i
-        class="toggle fa-solid fa-bars"
-        data-toggle="false"
-        aria-toggle="false"
-      ></i>
-      <nav class="header-nav" data-expend="false" aria-expend="false">
+      <img class="logo" src="images/Artboard1.svg" alt="images" />
+      <i class="toggle fa-solid fa-bars" data-toggle="false"></i>
+      <nav class="header-nav" data-expend="false">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="index.html">Work</a></li>
+
           <li><a class="header-link-linkdeln" href="#">linkedin</a></li>
           <li><a class="header-link-youtube" href="#">youtube</a></li>
         </ul>
@@ -63,7 +61,7 @@
               <i class="fa-brands fa-square-js"></i>
             </div>
             <div class="carousel-item">
-              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands">API</i>
               <i class="fa-brands fa-sass"></i>
               <i class="fa-brands fa-bootstrap"></i>
             </div>
@@ -99,57 +97,145 @@
         </div>
       </section>
       <section class="artwork">
-        <h2>Here are some of my work</h2>
-        <div class="card">
-          <img src="#" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Web development</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
+        <h2>My work</h2>
+        <div class="artwork-tab">
+          <div class="artwork-tab-container">
+            <button
+              class="btn artwork__tab artwork__tab--1 artwork__tab--active"
+              data-tab="1"
+            >
+              Acadamic Projects
+            </button>
+            <button class="btn artwork__tab artwork__tab--2" data-tab="2">
+              FrontendMentor Projects
+            </button>
+            <button class="btn artwork__tab artwork__tab--3" data-tab="3">
+              Personal Projects
+            </button>
           </div>
         </div>
-        <div class="card">
-          <img src="#" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">User Experience</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+        <div
+          class="artwork__content artwork__content--1 artwork__content--active"
+        >
+          <div class="artwork__content--detail">
+            <h5 class="artwork__header">pokedex</h5>
+            <a
+              href="https://wen00033.github.io/mtm6302-capstone-your-github-wen00033/"
+              ><img src="images/pokedex.png" alt="work" />
+            </a>
+
+            <p>
+              Familar with building content with API, for this project we create
+              content for user can see the list 20 different pokemons in a time.
+              As user clicked pokemon popup, can catch pokemon also store in
+              Localstrage.
             </p>
+            <div class="artwork-tool">
+              <a
+                href="https://github.com/wen00033/mtm6302-capstone-your-github-wen00033/tree/part-4"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-solid">API</i>
+            </div>
+          </div>
+          <div class="artwork__content--detail">
+            <h5 class="artwork__header">Restaurant wordpress theme</h5>
+            <a href="https://dev-wen00033.pantheonsite.io/"
+              ><img src="images/restaurant.png" alt="work" />
+            </a>
+            <p>
+              As this page, we created a wordpress theme content by using PHP.
+              Get familar with documentation and layout design.
+            </p>
+            <div class="artwork-tool">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-php"></i>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img src="#" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Video Production</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+        <div class="artwork__content artwork__content--2">
+          <div class="artwork__content--detail">
+            <h5 class="artwork__header">Home page</h5>
+            <a href="https://wen00033.github.io/frontendmentor/"
+              ><img src="images/landingpage.png" alt="work" />
+            </a>
+
+            <p>
+              Using flex and grid to create a responsive mockup landing page.
             </p>
+            <div class="artwork-tool">
+              <a href="https://github.com/wen00033/frontendmentor/tree/master"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-square-js"></i>
+            </div>
+          </div>
+          <div class="artwork__content--detail">
+            <h5 class="artwork__header">credit card page</h5>
+            <a
+              href="https://wen00033.github.io/interactive-card-details-form-main/"
+              ><img src="images/creditcard.png" alt="work" />
+            </a>
+            <p>
+              For this project, I create with JavaScript with input area to
+              check user with match the input requirement.
+            </p>
+            <div class="artwork-tool">
+              <a
+                href="https://github.com/wen00033/interactive-card-details-form-main"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-square-js"></i>
+            </div>
+          </div>
+          <div class="artwork__content--detail">
+            <h5 class="artwork__header">landing page</h5>
+            <a
+              href="https://wen00033.github.io/sunnyside-agency-landing-page-main/"
+              ><img src="images/landingpage1.png" alt="work" />
+            </a>
+
+            <p>
+              A responsive homepage for using grid and JavaScript to create
+              layout.
+            </p>
+            <div class="artwork-tool">
+              <a
+                href="https://github.com/wen00033/sunnyside-agency-landing-page-main"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-square-js"></i>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img src="#" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Graphic Design</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+        <div class="artwork__content artwork__content--3">
+          <div class="artwork__content--detail">
+            <h5 class="artwork__header">This portfolio</h5>
+            <p>
+              For this portfolio page, I create with JavaScript and SASS to
+              create a clear and interactive layout.
             </p>
+            <div class="artwork-tool"></div>
+          </div>
+          <div class="artwork__content--detail">
+            <h5>Up coming new project</h5>
           </div>
         </div>
       </section>
 
       <footer>
-        <div class="logo">
-          <img src="#" alt="logo" />
-        </div>
-        <div>
-          <h3>This is my porfolio</h3>
-          <p>Benjamin@copyright</p>
-        </div>
+        <img src="images/Artboard1.svg" alt="logo" />
+        <p>chi-hung@copyright</p>
       </footer>
     </main>
     <script src="script.js"></script>

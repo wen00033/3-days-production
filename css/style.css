@@ -23,7 +23,7 @@ img {
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: hsl(0, 0%, 94%);
   font-family: "Nunito Sans", sans-serif;
   max-width: 100%;
   overflow-x: hidden;
@@ -37,13 +37,13 @@ h1,
 h2,
 h3,
 p {
-  color: black;
+  color: hsl(0, 0%, 0%) 0;
 }
 
 h1 {
   font-size: 2.5rem;
   font-weight: 900;
-  color: black;
+  color: hsl(0, 0%, 0%) 0;
 }
 
 h2 {
@@ -56,6 +56,14 @@ h3 {
   font-weight: 500;
 }
 
+h5 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  padding: 1rem;
+}
+
 p {
   font-size: 1.6rem;
   font-weight: 400;
@@ -64,11 +72,78 @@ p {
 
 i {
   font-size: 4.5rem;
-  color: #f0f0f0;
+  color: hsl(0, 0%, 94%);
+}
+
+footer {
+  background-color: hsl(225, 28%, 33%);
+}
+
+.btn {
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.artwork__tab--1 {
+  background-color: hsl(0, 88%, 64%);
+}
+
+.artwork__tab--2 {
+  background-color: hsl(49, 94%, 63%);
+}
+
+.artwork__tab--3 {
+  background-color: hsl(80, 61%, 50%);
+}
+
+.artwork {
+  background-color: hsl(225, 28%, 33%);
+  color: hsl(0, 0%, 94%);
+}
+
+.fa-github {
+  cursor: pointer;
+}
+.fa-github:hover {
+  color: hsl(0, 0%, 0%) 0;
+}
+
+.artwork-tab-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.artwork__content--active {
+  display: grid !important;
+}
+
+.artwork__content {
+  display: none;
+}
+
+.artwork__content--detail {
+  display: grid;
+  row-gap: 1rem;
+}
+.artwork__content--detail img {
+  width: 100%;
+  object-fit: cover;
+}
+.artwork__content--detail i {
+  font-size: 3.5rem;
+}
+.artwork__content--detail p {
+  padding-inline: 2rem;
+}
+
+.artwork-tool {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 header {
-  background: #3c486b;
+  background: hsl(225, 28%, 33%);
   display: flex;
   justify-content: space-between;
   padding: 2rem;
@@ -94,16 +169,17 @@ header .logo {
 
 nav {
   transition: all 400ms ease-in-out;
+  overflow-x: hidden;
   z-index: 100;
   padding-block: clamp(7rem, 15rem, 50vh);
   position: absolute;
-  background: #3c486b;
+  background: hsl(225, 28%, 33%);
   inset: 0 0 0 30%;
 }
 nav ul {
   padding: 0;
   list-style-type: none;
-  background-color: #3c486b;
+  background-color: hsl(225, 28%, 33%);
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -111,7 +187,7 @@ nav ul {
 nav ul li a {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 900;
-  color: #f0f0f0;
+  color: hsl(0, 0%, 94%);
   font-size: 2.5rem;
   display: block;
   text-decoration: none;
@@ -121,8 +197,8 @@ nav ul li a {
   transition: all 400ms ease-in-out;
 }
 nav ul li a:hover {
-  background-color: #f0f0f0;
-  color: #f45050;
+  background-color: hsl(0, 0%, 94%);
+  color: hsl(0, 88%, 64%);
 }
 
 nav[data-expend=true] {
@@ -136,7 +212,7 @@ nav[data-expend=false] {
 }
 
 h1 {
-  background-color: #f0f0f0;
+  background-color: hsl(0, 0%, 94%);
   position: relative;
   isolation: isolate;
   text-transform: uppercase;
@@ -147,23 +223,22 @@ h1::after {
   inset: 0;
   width: 100%;
   position: absolute;
-  background-color: #f45050;
+  background-color: hsl(0, 88%, 64%);
 }
-
-span {
-  background-color: #f0f0f0;
+h1 span {
+  background-color: hsl(0, 0%, 94%);
   position: relative;
   isolation: isolate;
   text-transform: uppercase;
-  color: #f45050;
+  color: hsl(0, 88%, 64%);
 }
-span::after {
+h1 span::after {
   content: "";
   display: inline;
   inset: 0;
   width: 100%;
   position: absolute;
-  background-color: #f45050;
+  background-color: hsl(0, 88%, 64%);
 }
 
 .banner {
@@ -185,18 +260,18 @@ span::after {
   left: 50%;
 }
 .banner span::after {
-  background-color: #f0f0f0;
+  background-color: hsl(0, 0%, 94%);
   z-index: -1;
 }
 .banner button {
   margin-block-end: 1rem;
   padding: 0.5rem;
-  color: #f0f0f0;
+  color: hsl(0, 0%, 94%);
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
   border-radius: 2px;
-  background: #3c486b;
+  background: hsl(225, 28%, 33%);
   transition: all 100ms ease-in-out;
   box-shadow: 1px 1px 5px black;
 }
@@ -207,7 +282,7 @@ span::after {
   box-shadow: 1px 1px 2px black;
 }
 .banner img {
-  background-color: rgba(249, 217, 73, 0.678);
+  background-color: rgba(249, 217, 72, 0.678);
   align-self: self-end;
   object-fit: cover;
   height: 90%;
@@ -227,7 +302,7 @@ main > *:not(:nth-last-child(1)) {
 
 .skills-slide {
   padding-block: 2rem;
-  background-color: #3c486b;
+  background-color: hsl(225, 28%, 33%);
   align-items: center;
 }
 
@@ -268,14 +343,24 @@ main > *:not(:nth-last-child(1)) {
 }
 
 .about-me-1 {
-  background-color: #f45050;
+  background-color: hsl(0, 88%, 64%);
   align-self: end;
 }
 
 .about-me-2 {
-  background-color: #f9d949;
+  background-color: hsl(49, 94%, 63%);
   order: 4;
   align-self: start;
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
