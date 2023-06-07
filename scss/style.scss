@@ -2,6 +2,9 @@
 @import "utility/utility.scss";
 @import "mixin/mixin";
 
+// .logo {
+//   object-position: right;
+// }
 header {
   //   position: relative;
   background: $color-fourth;
@@ -26,6 +29,7 @@ header {
 }
 
 nav {
+  // display: hidden;
   transition: all 400ms ease-in-out;
   overflow-x: hidden;
   z-index: 100;
@@ -61,7 +65,7 @@ nav {
 }
 
 nav[data-expend="true"] {
-  display: hidden;
+  display: none; // displdsiay: hidden !important;
   transform: translateX(100%);
 }
 nav[data-expend="false"] {
@@ -186,5 +190,110 @@ footer {
   align-items: center;
   p {
     color: white;
+  }
+  .logo {
+    width: 15rem;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  span {
+    font-size: 3rem;
+    padding-block: 0.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 2rem;
+  }
+
+  main > *:not(:nth-child(1)),
+  .banner,
+  .header {
+    padding-inline: 5rem;
+  }
+
+  .banner {
+    height: 50vh;
+  }
+
+  header {
+    padding: 1rem;
+  }
+  .toggle {
+    display: none;
+  }
+  nav {
+    position: relative;
+    inset: 0 0 0 0;
+    padding-block: 0.5rem;
+
+    ul {
+      flex-direction: row;
+      margin: 0;
+      li a {
+        font-size: 2rem;
+      }
+    }
+    .logo {
+      width: 5rem;
+    }
+  }
+
+  nav[data-expend="true"] {
+    display: block;
+    transform: translateX(0);
+  }
+
+  .banner img {
+    margin-left: 7rem;
+
+    // padding-right: 2rem;
+    // border-radius: 1000000000000rem;
+    // border: 1rem solid $color-second;
+    width: 50%;
+  }
+
+  .banner-text-content {
+    padding-block: 3rem;
+    background-color: $color-fifth;
+    @include heading;
+    &::after {
+      z-index: -5;
+      left: 40%;
+    }
+  }
+  .banner-heading {
+    background-color: $color-sixth;
+    &::after {
+      left: 20%;
+      background-color: $color-sixth;
+    }
+  }
+  .carousel-item i {
+    margin-inline: 5rem !important;
+  }
+  .about-me-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .about-me-2 {
+    order: 1;
+  }
+  .artwork__content--active {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .btn {
+    font-size: 1.8rem;
+    padding-inline: 2rem;
   }
 }

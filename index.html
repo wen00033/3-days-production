@@ -26,14 +26,24 @@
   <body>
     <header>
       <img class="logo" src="images/Artboard1.svg" alt="images" />
-      <i class="toggle fa-solid fa-bars" data-toggle="false"></i>
+      <img
+        src="images/bar.svg"
+        class="toggle fa-bars"
+        data-toggle="false"
+        alt="toggle"
+      />
+      <!-- <i class="toggle fa-bars" data-toggle="false"> </i> -->
       <nav class="header-nav" data-expend="false">
         <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="index.html">Work</a></li>
-
-          <li><a class="header-link-linkdeln" href="#">linkedin</a></li>
-          <li><a class="header-link-youtube" href="#">youtube</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#artwork">Work</a></li>
+          <li>
+            <a
+              class="header-link-linkdeln"
+              href="https://www.linkedin.com/in/chi-hung-wen-2b4830231/"
+              >linkedin</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -81,7 +91,7 @@
         </div>
       </section>
 
-      <section class="about-me">
+      <section class="about-me" id="about-me">
         <h2>This is me!</h2>
         <div class="about-me-wrapper">
           <img class="my-photo-1" src="images/mypicture.jpg" alt="images" />
@@ -96,7 +106,7 @@
           </p>
         </div>
       </section>
-      <section class="artwork">
+      <section class="artwork" id="artwork">
         <h2>My work</h2>
         <div class="artwork-tab">
           <div class="artwork-tab-container">
@@ -142,7 +152,7 @@
             </div>
           </div>
           <div class="artwork__content--detail">
-            <h5 class="artwork__header">Restaurant wordpress theme</h5>
+            <h5 class="artwork__header">Restaurant theme</h5>
             <a href="https://dev-wen00033.pantheonsite.io/"
               ><img src="images/restaurant.png" alt="work" />
             </a>
@@ -154,6 +164,7 @@
               <i class="fa-brands fa-html5"></i>
               <i class="fa-brands fa-css3-alt"></i>
               <i class="fa-brands fa-php"></i>
+              <i class="fa-brands fa-wordpress"></i>
             </div>
           </div>
         </div>
@@ -220,6 +231,7 @@
         </div>
         <div class="artwork__content artwork__content--3">
           <div class="artwork__content--detail">
+            <img src="images/myhomepage.png" alt="work" />
             <h5 class="artwork__header">This portfolio</h5>
             <p>
               For this portfolio page, I create with JavaScript and SASS to
@@ -234,7 +246,7 @@
       </section>
 
       <footer>
-        <img src="images/Artboard1.svg" alt="logo" />
+        <img class="logo" src="images/Artboard1.svg" alt="logo" />
         <p>chi-hung@copyright</p>
       </footer>
     </main>
