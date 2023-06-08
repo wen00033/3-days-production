@@ -1,16 +1,26 @@
 const naviagtionBar = document.querySelector(".header-nav");
 const naviagtionToggle = document.querySelector(".toggle");
-
-naviagtionToggle.addEventListener("click", function () {
-  const visibility = naviagtionToggle.getAttribute("data-toggle");
-  console.log(visibility);
-  if (visibility == "false") {
+const link = document.querySelectorAll(".link");
+const navbarFunction = function (a) {
+  if (a == "false") {
     naviagtionBar.setAttribute("data-expend", true);
     naviagtionToggle.setAttribute("data-toggle", true);
   } else {
     naviagtionBar.setAttribute("data-expend", false);
     naviagtionToggle.setAttribute("data-toggle", false);
   }
+};
+
+link.forEach((a) =>
+  a.addEventListener("click", function () {
+    const linkClicked = a.getAttribute("data-expend");
+    navbarFunction(linkClicked);
+  })
+);
+
+naviagtionToggle.addEventListener("click", function () {
+  const visibility = naviagtionToggle.getAttribute("data-toggle");
+  navbarFunction(visibility);
 });
 
 // -------------------------------------------------
