@@ -84,6 +84,26 @@ footer {
   font-size: 1.2rem;
 }
 
+.button-aboutme {
+  margin-bottom: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  box-shadow: 2px 2px 2px black;
+  background-color: hsl(225, 28%, 33%);
+  color: hsl(0, 0%, 94%);
+  transition: all 100ms ease-out;
+}
+
+.button-aboutme:hover {
+  box-shadow: 3px 3px 5px black;
+}
+
+.button-aboutme:focus {
+  box-shadow: 2px 2px 1px black;
+}
+
 .toggle {
   aspect-ratio: 1/1;
   width: 4rem;
@@ -251,6 +271,10 @@ h1 span::after {
   background-color: hsl(0, 88%, 64%);
 }
 
+.wrapper > *:not(:nth-child(1)) {
+  padding: 2rem;
+}
+
 .banner {
   padding-top: 2rem;
   padding-inline: 2rem;
@@ -272,24 +296,6 @@ h1 span::after {
 .banner span::after {
   background-color: hsl(0, 0%, 94%);
   z-index: -1;
-}
-.banner button {
-  margin-block-end: 1rem;
-  padding: 0.5rem;
-  color: hsl(0, 0%, 94%);
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 700;
-  border-radius: 2px;
-  background: hsl(225, 28%, 33%);
-  transition: all 100ms ease-in-out;
-  box-shadow: 1px 1px 5px black;
-}
-.banner button:hover {
-  box-shadow: 1px 2px 3px black;
-}
-.banner button:active {
-  box-shadow: 1px 1px 2px black;
 }
 .banner img {
   background-color: rgba(249, 217, 72, 0.678);
@@ -334,7 +340,6 @@ main > *:not(:nth-last-child(1)) {
   grid-template-rows: 1fr;
   align-items: end;
   gap: 1rem;
-  hyphens: auto;
 }
 .about-me-wrapper p {
   padding: 2rem;
@@ -378,6 +383,10 @@ footer .logo {
 }
 
 @media only screen and (min-width: 768px) {
+  .wrapper > *:not(:nth-child(1)) {
+    padding-inline: 15vw;
+    padding-block: 3vh;
+  }
   h1 {
     font-size: 4.5rem;
   }
@@ -431,7 +440,7 @@ footer .logo {
     width: 50%;
   }
   .banner-text-content {
-    padding-block: 3rem;
+    padding-block: 1.5rem;
     background-color: hsl(49, 94%, 63%);
     background-color: hsl(0, 0%, 94%);
     position: relative;

@@ -50,222 +50,225 @@
       </nav>
     </header>
     <main>
-      <section>
-        <div class="banner">
-          <div class="banner-text-content">
-            <h1 class="banner-heading">
-              Welcome to <br /><span>benjamin's</span> website
-            </h1>
-            <p class="heading-text">Looking for frontend web developer?</p>
-            <button>Get to know me!</button>
-          </div>
-          <img class="banner-photo" src="images/mypicture.png" alt="my-photo" />
-        </div>
-        <div
-          id="carouselExampleDark"
-          class="skills-slide carousel carousel-dark slide"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <i class="fa-brands fa-square-github"></i>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-square-js"></i>
+      <div class="wrapper">
+        <section>
+          <div class="banner">
+            <div class="banner-text-content">
+              <h1 class="banner-heading">
+                Welcome to <br /><span>benjamin's</span> website
+              </h1>
+              <p class="heading-text">Looking for frontend web developer?</p>
+              <a class="button-aboutme" href="#about-me">Get to know me!</a>
             </div>
-            <div class="carousel-item">
-              <i class="fa-brands">API</i>
-              <i class="fa-brands fa-sass"></i>
-              <i class="fa-brands fa-bootstrap"></i>
-            </div>
+            <img class="banner-photo" src="images/mypicture.png" alt="my-photo" />
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev"
-          ></button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="next"
-          ></button>
-        </div>
-      </section>
-
-      <section class="about-me" id="about-me">
-        <h2>This is me!</h2>
-        <div class="about-me-wrapper">
-          <img class="my-photo-1" src="images/mypicture.jpg" alt="images" />
-          <img class="my-photo-2" src="images/myimage.png" alt="images" />
-          <p class="about-me-1">
-            Hi! I am a student in interactive media design at Algonquin College,
-            Love to travel around the city and experience culture. Here is a
-            photo I went to the sahara desert! I'm dedicated to becoming a
-            frontend developer.
-          </p>
-          <p class="about-me-2">
-            Here is a photo I took when I just arrived in Canada, until now I
-            still not able to get used to the weather here. For me here just too
-            cold.
-          </p>
-        </div>
-      </section>
-      <section class="artwork" id="artwork">
-        <h2>My work</h2>
-        <div class="artwork-tab">
-          <div class="artwork-tab-container">
+          <div
+            id="carouselExampleDark"
+            class="skills-slide carousel carousel-dark slide"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <i class="fa-brands fa-square-github"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-square-js"></i>
+              </div>
+              <div class="carousel-item">
+                <i class="fa-brands">API</i>
+                <i class="fa-brands fa-sass"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+            </div>
             <button
-              class="btn artwork__tab artwork__tab--1 artwork__tab--active"
-              data-tab="1"
-            >
-              Acadamic Projects
-            </button>
-            <button class="btn artwork__tab artwork__tab--2" data-tab="2">
-              FrontendMentor Projects
-            </button>
-            <button class="btn artwork__tab artwork__tab--3" data-tab="3">
-              Personal Projects
-            </button>
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            ></button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            ></button>
           </div>
-        </div>
-        <div
-          class="artwork__content artwork__content--1 artwork__content--active"
-        >
-          <div class="artwork__content--detail">
-            <h5 class="artwork__header">pokedex</h5>
-            <a
-              href="https://wen00033.github.io/mtm6302-capstone-your-github-wen00033/"
-              ><img src="images/pokedex.png" alt="work" />
-            </a>
-
-            <p>
-              Familiar with building content with API, for this project we
-              create content for users can see the list of 20 different Pokemon
-              at a time.As the user clicked the pokemon popup, can catch Pokemon
-              also store in Local storage.
+        </section>
+  
+        <section class="about-me" id="about-me">
+          <h2>This is me!</h2>
+          <div class="about-me-wrapper">
+            <img class="my-photo-1" src="images/mypicture.jpg" alt="images" />
+            <img class="my-photo-2" src="images/myimage.png" alt="images" />
+            <p class="about-me-1">
+              Hi! I am a student in interactive media design at Algonquin College,
+              Love to travel around the city and experience culture. Here is a
+              photo I went to the sahara desert! I'm dedicated to becoming a
+              frontend developer.
             </p>
-            <div class="artwork-tool">
+            <p class="about-me-2">
+              Here is a photo I took when I just arrived in Canada, until now I
+              still not able to get used to the weather here. For me here just too
+              cold.
+            </p>
+          </div>
+        </section>
+        <section class="artwork" id="artwork">
+          <h2>My work</h2>
+          <div class="artwork-tab">
+            <div class="artwork-tab-container">
+              <button
+                class="btn artwork__tab artwork__tab--1 artwork__tab--active"
+                data-tab="1"
+              >
+                Acadamic Projects
+              </button>
+              <button class="btn artwork__tab artwork__tab--2" data-tab="2">
+                FrontendMentor Projects
+              </button>
+              <button class="btn artwork__tab artwork__tab--3" data-tab="3">
+                Personal Projects
+              </button>
+            </div>
+          </div>
+          <div
+            class="artwork__content artwork__content--1 artwork__content--active"
+          >
+            <div class="artwork__content--detail">
+              <h5 class="artwork__header">pokedex</h5>
               <a
-                href="https://github.com/wen00033/mtm6302-capstone-your-github-wen00033/tree/part-4"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-square-js"></i>
-              <i class="fa-solid">API</i>
+                href="https://wen00033.github.io/mtm6302-capstone-your-github-wen00033/"
+                ><img src="images/pokedex.png" alt="work" />
+              </a>
+  
+              <p>
+                Familiar with building content with API, for this project we
+                create content for users can see the list of 20 different Pokemon
+                at a time.As the user clicked the pokemon popup, can catch Pokemon
+                also store in Local storage.
+              </p>
+              <div class="artwork-tool">
+                <a
+                  href="https://github.com/wen00033/mtm6302-capstone-your-github-wen00033/tree/part-4"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-solid">API</i>
+              </div>
+            </div>
+            <div class="artwork__content--detail">
+              <h5 class="artwork__header">Restaurant theme</h5>
+              <a href="https://dev-wen00033.pantheonsite.io/"
+                ><img src="images/restaurant.png" alt="work" />
+              </a>
+              <p>
+                For this page, we created WordPress theme content by using PHP.
+                Get familiar with PHP documentation and layout design.
+              </p>
+              <div class="artwork-tool">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-php"></i>
+                <i class="fa-brands fa-wordpress"></i>
+              </div>
             </div>
           </div>
-          <div class="artwork__content--detail">
-            <h5 class="artwork__header">Restaurant theme</h5>
-            <a href="https://dev-wen00033.pantheonsite.io/"
-              ><img src="images/restaurant.png" alt="work" />
-            </a>
-            <p>
-              For this page, we created WordPress theme content by using PHP.
-              Get familiar with PHP documentation and layout design.
-            </p>
-            <div class="artwork-tool">
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-php"></i>
-              <i class="fa-brands fa-wordpress"></i>
+          <div class="artwork__content artwork__content--2">
+            <div class="artwork__content--detail">
+              <h5 class="artwork__header">Home page</h5>
+              <a href="https://wen00033.github.io/frontendmentor/"
+                ><img src="images/landingpage.png" alt="work" />
+              </a>
+  
+              <p>
+                Using flex and grid to create a responsive mockup landing page.
+              </p>
+              <div class="artwork-tool">
+                <a href="https://github.com/wen00033/frontendmentor/tree/master"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-square-js"></i>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="artwork__content artwork__content--2">
-          <div class="artwork__content--detail">
-            <h5 class="artwork__header">Home page</h5>
-            <a href="https://wen00033.github.io/frontendmentor/"
-              ><img src="images/landingpage.png" alt="work" />
-            </a>
-
-            <p>
-              Using flex and grid to create a responsive mockup landing page.
-            </p>
-            <div class="artwork-tool">
-              <a href="https://github.com/wen00033/frontendmentor/tree/master"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-square-js"></i>
-            </div>
-          </div>
-          <div class="artwork__content--detail">
-            <h5 class="artwork__header">credit card page</h5>
-            <a
-              href="https://wen00033.github.io/interactive-card-details-form-main/"
-              ><img src="images/creditcard.png" alt="work" />
-            </a>
-            <p>
-              For this project, I create with JavaScript input area to check
-              user matches the input requirement.
-            </p>
-            <div class="artwork-tool">
+            <div class="artwork__content--detail">
+              <h5 class="artwork__header">credit card page</h5>
               <a
-                href="https://github.com/wen00033/interactive-card-details-form-main"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-square-js"></i>
+                href="https://wen00033.github.io/interactive-card-details-form-main/"
+                ><img src="images/creditcard.png" alt="work" />
+              </a>
+              <p>
+                For this project, I create with JavaScript input area to check
+                user matches the input requirement.
+              </p>
+              <div class="artwork-tool">
+                <a
+                  href="https://github.com/wen00033/interactive-card-details-form-main"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-square-js"></i>
+              </div>
             </div>
-          </div>
-          <div class="artwork__content--detail">
-            <h5 class="artwork__header">landing page</h5>
-            <a
-              href="https://wen00033.github.io/sunnyside-agency-landing-page-main/"
-              ><img src="images/landingpage1.png" alt="work" />
-            </a>
-
-            <p>
-              A responsive homepage for using grid and JavaScript to create
-              layout.
-            </p>
-            <div class="artwork-tool">
+            <div class="artwork__content--detail">
+              <h5 class="artwork__header">landing page</h5>
               <a
-                href="https://github.com/wen00033/sunnyside-agency-landing-page-main"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-square-js"></i>
+                href="https://wen00033.github.io/sunnyside-agency-landing-page-main/"
+                ><img src="images/landingpage1.png" alt="work" />
+              </a>
+  
+              <p>
+                A responsive homepage for using grid and JavaScript to create
+                layout.
+              </p>
+              <div class="artwork-tool">
+                <a
+                  href="https://github.com/wen00033/sunnyside-agency-landing-page-main"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-square-js"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="artwork__content artwork__content--3">
-          <div class="artwork__content--detail">
-            <a href="https://wen00033.github.io/Benjamin-s-portfolio/">
-              <img src="images/myhomepage.png" alt="work"
-            /></a>
-            <h5 class="artwork__header">This portfolio</h5>
-            <p>
-              For this portfolio page, I create with JavaScript and SASS to
-              create a clear and interactive layout.
-            </p>
-            <div class="artwork-tool">
-              <a href="https://github.com/wen00033/Benjamin-s-portfolio"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <i class="fa-brands fa-html5"></i>
-              <i class="fa-brands fa-css3-alt"></i>
-              <i class="fa-brands fa-square-js"></i>
-              <i class="fa-brands fa-sass"></i>
+          <div class="artwork__content artwork__content--3">
+            <div class="artwork__content--detail">
+              <a href="https://wen00033.github.io/Benjamin-s-portfolio/">
+                <img src="images/myhomepage.png" alt="work"
+              /></a>
+              <h5 class="artwork__header">This portfolio</h5>
+              <p>
+                For this portfolio page, I create with JavaScript and SASS to
+                create a clear and interactive layout.
+              </p>
+              <div class="artwork-tool">
+                <a href="https://github.com/wen00033/Benjamin-s-portfolio"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-sass"></i>
+              </div>
+            </div>
+            <div class="artwork__content--detail">
+              <h5>Up coming new project</h5>
             </div>
           </div>
-          <div class="artwork__content--detail">
-            <h5>Up coming new project</h5>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-        <img class="logo" src="images/Artboard1.svg" alt="logo" />
-        <p>chi-hung@copyright</p>
-      </footer>
-    </main>
-    <script src="script.js"></script>
+        </section>
+  
+        <footer>
+          <img class="logo" src="images/Artboard1.svg" alt="logo" />
+          <p>chi-hung@copyright</p>
+        </footer>
+      </main>
+  
+      </div>
+          <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

@@ -84,6 +84,9 @@ h1 {
 }
 
 // ------------------------------------
+.wrapper > *:not(:nth-child(1)) {
+  padding: 2rem;
+}
 
 .banner {
   padding-top: $object-space;
@@ -105,9 +108,6 @@ h1 {
   span::after {
     background-color: $color-third;
     z-index: -1;
-  }
-  button {
-    @include btn;
   }
 
   img {
@@ -153,8 +153,6 @@ main > *:not(:nth-last-child(1)) {
   grid-template-rows: 1fr;
   align-items: end;
   gap: 1rem;
-
-  hyphens: auto;
   // text-align: center;
   p {
     padding: $object-space;
@@ -198,6 +196,11 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  .wrapper > *:not(:nth-child(1)) {
+    padding-inline: clamp(10vw, 15vw, 50vw);
+    padding-block: 3vh;
+  }
+
   h1 {
     font-size: 4.5rem;
   }
@@ -263,7 +266,7 @@ footer {
   }
 
   .banner-text-content {
-    padding-block: 3rem;
+    padding-block: 1.5rem;
     background-color: $color-fifth;
     @include heading;
     &::after {
