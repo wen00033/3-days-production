@@ -148,10 +148,7 @@ main > *:not(:nth-last-child(1)) {
 }
 
 .about-me-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  align-items: end;
+  display: flex;
   gap: 1rem;
   // text-align: center;
   p {
@@ -161,9 +158,8 @@ main > *:not(:nth-last-child(1)) {
   }
   img {
     border-radius: 10px;
-    width: 100%;
-    height: 100%;
-
+    aspect-ratio: 1;
+    width: 50%;
     object-fit: cover;
     object-position: right;
   }
@@ -285,18 +281,39 @@ footer {
     margin-inline: 5rem !important;
   }
   .about-me-wrapper {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
   }
-  .about-me-2 {
-    order: 1;
-  }
+
   .artwork__content--active {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
   .btn {
-    font-size: 1.8rem;
+    transition: all 200ms ease-out;
+    font-size: 2.5rem;
     padding-inline: 2rem;
+    :hover {
+      transform: scale(1.2);
+    }
   }
+}
+// -------------------------------------
+.new-porject {
+  background-color: rgba($color-fifth, 0.678);
+}
+.new-image {
+  align-self: center;
+  aspect-ratio: 19/28;
+  height: 40rem;
+}
+.new-page-link {
+  @include btn;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.new-wrapper {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
 }
