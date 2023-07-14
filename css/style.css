@@ -336,6 +336,7 @@ main > *:not(:nth-last-child(1)) {
 
 .about-me-wrapper {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 .about-me-wrapper p {
@@ -383,6 +384,9 @@ footer .logo {
   .wrapper > *:not(:nth-child(1)) {
     padding-inline: 15vw;
     padding-block: 3vh;
+  }
+  .about-me-wrapper {
+    flex-direction: row;
   }
   h1 {
     font-size: 4.5rem;
@@ -465,9 +469,6 @@ footer .logo {
   }
   .carousel-item i {
     margin-inline: 5rem !important;
-  }
-  .about-me-wrapper {
-    display: flex;
   }
   .artwork__content--active {
     grid-template-columns: 1fr 1fr;
