@@ -493,6 +493,11 @@ footer .logo {
   height: 40rem;
 }
 
+.new-image-1 {
+  aspect-ratio: 19/46;
+  height: 40rem;
+}
+
 .new-page-link {
   margin-block-end: 1rem;
   padding: 0.5rem;
