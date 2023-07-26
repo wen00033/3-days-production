@@ -189,11 +189,11 @@ header .logo {
   transition: all 400ms ease-out;
 }
 
-.toggle[data-toggle=true] {
+.toggle[data-toggle="true"] {
   transform: rotate(0);
 }
 
-.toggle[data-toggle=false] {
+.toggle[data-toggle="false"] {
   transform: rotate(-90deg);
 }
 
@@ -231,12 +231,12 @@ nav ul li a:hover {
   color: hsl(0, 88%, 64%);
 }
 
-nav[data-expend=true] {
+nav[data-expend="true"] {
   display: none;
   transform: translateX(100%);
 }
 
-nav[data-expend=false] {
+nav[data-expend="false"] {
   display: block;
   transform: translateX(0);
 }
@@ -286,8 +286,8 @@ h1 span::after {
 .banner .banner-text-content {
   justify-content: space-between;
   align-self: center;
-  grid-row: 1/span 2;
-  grid-column: 1/span 1;
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 1;
 }
 .banner h1::after {
   z-index: -2;
@@ -303,8 +303,8 @@ h1 span::after {
   object-fit: cover;
   height: 90%;
   width: 100%;
-  grid-row: 1/span 2;
-  grid-column: 2/span 1;
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 1;
   z-index: 3;
 }
 
@@ -432,7 +432,7 @@ footer .logo {
   nav .logo {
     width: 5rem;
   }
-  nav[data-expend=true] {
+  nav[data-expend="true"] {
     display: block;
     transform: translateX(0);
   }
@@ -498,6 +498,10 @@ footer .logo {
   height: 40rem;
 }
 
+.new-image-2 {
+  aspect-ratio: 88/71;
+  height: 40rem;
+}
 .new-page-link {
   margin-block-end: 1rem;
   padding: 0.5rem;
